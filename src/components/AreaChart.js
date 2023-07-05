@@ -10,7 +10,7 @@ const AreaChartComponent = ({ data }) => {
         plugins: {
           title: {
             display: true,
-            text: "Users Gained between 2016-2020",
+            text: "",
           },
           legend: {
             display: false,
