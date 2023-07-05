@@ -36,6 +36,9 @@ const Register = () => {
                   <div className="header-logo m-auto">
                     <img src="/images/logo.png" className="img-fluid " />
                   </div>
+                   </div>
+                  {loading && <Loading />}
+                  {error && <Message variant="danger">{error}</Message>}
                   <h2 className="text-center">Register</h2>
                   <form onSubmit={(e) => handleRegister(e)}>
                     <div className="login-input">
