@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { register } from "../Redux/Action/UserAction";
 import { useSelector, useDispatch } from "react-redux";
+import Loading from "../Loading/Error/Loading";
+import Message from "../Loading/Error/Error";
 const Register = () => {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -36,7 +38,6 @@ const Register = () => {
                   <div className="header-logo m-auto">
                     <img src="/images/logo.png" className="img-fluid " />
                   </div>
-                   </div>
                   {loading && <Loading />}
                   {error && <Message variant="danger">{error}</Message>}
                   <h2 className="text-center">Register</h2>
