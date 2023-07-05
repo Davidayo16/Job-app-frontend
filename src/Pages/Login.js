@@ -84,7 +84,6 @@ const Login = () => {
       </div>
     </>
   );
-  addEventListener
 };
 
 export default Login;
